@@ -6,7 +6,7 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install -g @angular/cli
-      
+
   pre_build :
     commands:
       - echo Installing source NPM dependencies...
@@ -18,7 +18,7 @@ phases:
       - echo Building the Angular app...
       - ng build -c production
 
-  artifacts:
+artifacts:
     files:
       - '**/*'
     base-directory: dist/my-angular-project   

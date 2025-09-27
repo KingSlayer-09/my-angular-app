@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/my-angular-project
+permissions:
+  - object: /var/www/my-angular-project/
+    pattern: "**"
+    owner: root
+    group: root
+    mode: '0755'
+    type:
+      - file
+      - directory
+hooks:
+  ApplicationStart:
+    - location: scripts/ApplicationStart.sh
+      timeout: 300
+      runas: root

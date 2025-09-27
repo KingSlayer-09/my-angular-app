@@ -21,7 +21,7 @@ phases:
 artifacts:
     files:
       - 'dist/my-angular-project/**/*'
-      - 'scripts/**/*'
+      - 'hook-scripts/**/*'
       - 'appspec.yml'
 
  
